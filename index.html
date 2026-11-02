@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Лиза Ветрова — иллюстратор и картограф</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700;800&family=Source+Serif+4:ital,wght@0,400;0,600;1,400&display=swap">
+<style>
+:root{--bg:#e6edee;--ink:#13293b;--muted:#4d6475;--line:#a9bcc4;--accent:#e0a100;--accent-ink:#13293b;--sea:#c3d8dc;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0f1f2b;--ink:#e3ecef;--muted:#9bb2bf;--line:#2f4858;--accent:#f2b705;--accent-ink:#0f1f2b;--sea:#16303f;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#0f1f2b;--ink:#e3ecef;--muted:#9bb2bf;--line:#2f4858;--accent:#f2b705;--accent-ink:#0f1f2b;--sea:#16303f;color-scheme:dark}
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 1.125rem/1.65 "Source Serif 4",Georgia,serif}
+h1,h2,h3,.sans{font-family:"Bricolage Grotesque","Helvetica Neue",Arial,sans-serif}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
+.wrap{max-width:1040px;margin:0 auto;padding:0 24px}
+nav{display:flex;justify-content:space-between;align-items:center;padding:22px 0;font-family:"Bricolage Grotesque",Arial,sans-serif;font-weight:500}
+nav a{text-decoration:none;margin-left:24px}
+nav a:first-child{margin:0;font-weight:800}
+nav a:hover{text-decoration:underline;text-decoration-color:var(--accent);text-underline-offset:6px;text-decoration-thickness:3px}
+.hero{position:relative;padding:56px 0 72px;overflow:hidden}
+.hero svg{position:absolute;right:-8%;top:0;width:78%;height:100%;opacity:.9;pointer-events:none}
+.hero svg path{fill:none;stroke:var(--line);stroke-width:1.3}
+.hero svg path.hi{stroke:var(--accent);stroke-width:2.2}
+h1{position:relative;font-size:clamp(2.6rem,8vw,6rem);line-height:1;letter-spacing:-.03em;font-weight:800;margin:0 0 28px;max-width:11em}
+.lead{position:relative;max-width:34em;color:var(--muted);font-size:1.25rem;margin:0 0 32px}
+.btn{position:relative;display:inline-block;background:var(--accent);color:var(--accent-ink);font:700 1rem "Bricolage Grotesque",Arial,sans-serif;padding:14px 26px;border-radius:999px;text-decoration:none}
+.btn:hover{filter:brightness(1.08)}
+.coord{position:relative;margin-top:36px;font:500 .95rem "Bricolage Grotesque",Arial,sans-serif;color:var(--muted)}
+section{padding:72px 0;border-top:1px solid var(--line)}
+h2{font-size:clamp(1.8rem,4vw,2.6rem);letter-spacing:-.02em;margin:0 0 36px;font-weight:700}
+.proj{display:grid;grid-template-columns:110px 1fr auto;gap:8px 28px;align-items:baseline;padding:22px 0;border-bottom:1px solid var(--line);text-decoration:none}
+.proj:first-of-type{border-top:1px solid var(--line)}
+.proj h3{margin:0;font-size:1.55rem;font-weight:700;letter-spacing:-.01em}
+.proj p{margin:4px 0 0;color:var(--muted);font-size:1rem}
+.proj .yr,.proj .tag{font:500 .95rem "Bricolage Grotesque",Arial,sans-serif;color:var(--muted)}
+.proj:hover h3{text-decoration:underline;text-decoration-color:var(--accent);text-decoration-thickness:3px;text-underline-offset:6px}
+.proj .swatch{grid-column:1/-1;height:0;overflow:hidden;transition:height .3s;border-radius:6px;background:var(--sea)}
+.proj:hover .swatch,.proj:focus-visible .swatch{height:84px;margin-top:14px}
+.about{display:grid;grid-template-columns:1fr 1fr;gap:48px}
+.about p{margin:0 0 1em;max-width:34em}
+.facts{margin:0;padding:0;list-style:none;font-family:"Bricolage Grotesque",Arial,sans-serif}
+.facts li{display:flex;justify-content:space-between;padding:12px 0;border-bottom:1px solid var(--line)}
+.facts span:first-child{color:var(--muted)}
+.contact a.big{display:inline-block;font:800 clamp(1.6rem,5vw,3.2rem)/1.1 "Bricolage Grotesque",Arial,sans-serif;letter-spacing:-.02em;text-decoration-color:var(--accent);text-decoration-thickness:4px;text-underline-offset:8px;word-break:break-word}
+footer{padding:28px 0 40px;color:var(--muted);font-size:.95rem;border-top:1px solid var(--line)}
+@media (max-width:720px){.hero svg{width:130%;right:-30%;opacity:.5}.proj{grid-template-columns:1fr}.about{grid-template-columns:1fr}nav a{margin-left:14px}}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.proj .swatch{transition:none}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<nav><a href="#top">Лиза Ветрова</a><div><a href="#work">Работы</a><a href="#about">Обо мне</a><a href="#contact">Контакты</a></div></nav>
+
+<header class="hero" id="top">
+<svg viewBox="0 0 600 500" preserveAspectRatio="xMidYMid slice" aria-hidden="true" id="map">
+<path d="M300 40c90-10 170 40 210 110s30 150-20 215-140 100-220 90S90 400 60 310 70 140 140 85 240 48 300 40z"/>
+<path d="M300 80c70-6 135 34 168 90s24 122-16 174-112 80-176 72S120 380 96 308s6-118 60-162 88-62 144-66z"/>
+<path d="M300 120c52-4 100 26 124 68s18 92-12 132-84 60-132 54-96-38-114-92 6-90 46-122 52-38 88-40z"/>
+<path d="M300 162c36-2 68 18 84 48s10 64-10 90-58 40-92 36-66-26-78-62 6-62 32-84 36-26 64-28z"/>
+<path class="hi" d="M300 204c22-1 42 12 50 30s2 40-12 54-38 20-58 16-40-18-46-40 4-40 20-52 26-8 46-8z"/>
+<path d="M0 470c80-30 150-10 230-30s130-60 220-50 110 40 150 20"/>
+<path d="M0 495c80-30 150-10 230-30s130-60 220-50 110 40 150 20"/>
+</svg>
+<h1>Рисую карты мест, которых нет на карте</h1>
+<p class="lead">Я Лиза, иллюстратор и картограф из Кишинёва. Делаю карты для книг, музеев и небольших городов: от рукописных набросков до готового макета для печати.</p>
+<a class="btn" href="#work">Смотреть работы</a>
+<div class="coord" id="coord" aria-live="off">Широта 47.01° N · долгота 28.86° E</div>
+</header>
+
+<section id="work">
+<h2>Избранные работы</h2>
+<a class="proj" href="#contact"><span class="yr">2026</span><div><h3>Атлас старых виноградников Молдовы</h3><p>Книга на 96 страниц, 14 карт. Издательство «Прут».</p></div><span class="tag">Книжная графика</span><div class="swatch"></div></a>
+<a class="proj" href="#contact"><span class="yr">2025</span><div><h3>Карта-гид по Старому Оргееву</h3><p>Складная карта для музея. Тираж 5000 экземпляров.</p></div><span class="tag">Печать</span><div class="swatch"></div></a>
+<a class="proj" href="#contact"><span class="yr">2024</span><div><h3>Остров Тихих Часов</h3><p>Вымышленная карта для настольной игры. 120 иллюстраций.</p></div><span class="tag">Игры</span><div class="swatch"></div></a>
+<a class="proj" href="#contact"><span class="yr">2023</span><div><h3>Велосипедные маршруты Кишинёва</h3><p>Интерактивная карта для городского проекта.</p></div><span class="tag">Веб</span><div class="swatch"></div></a>
+</section>
+
+<section id="about" class="about">
+<div>
+<h2>Обо мне</h2>
+<p>Учу себя видеть местность как рассказ: где река делает поворот, там обязательно что-то происходит. Каждую карту начинаю с прогулки по месту и блокнота.</p>
+<p>Работаю с тушью и акварелью, затем собираю макет в векторе. Беру 2–3 проекта в квартал, чтобы успевать вникать.</p>
+</div>
+<ul class="facts" aria-label="Коротко обо мне">
+<li><span>Опыт</span><span>9 лет</span></li>
+<li><span>Инструменты</span><span>Тушь, Illustrator, QGIS</span></li>
+<li><span>Языки</span><span>Русский, румынский, английский</span></li>
+<li><span>Срок на карту</span><span>от 3 недель</span></li>
+</ul>
+</section>
+
+<section id="contact" class="contact">
+<h2>Обсудим вашу карту?</h2>
+<a class="big" href="mailto:hello@lizavetrova.example">hello@lizavetrova.example</a>
+<p style="color:var(--muted);margin-top:20px">Расскажите, для чего нужна карта и к какому сроку. Отвечу в течение двух дней.</p>
+</section>
+<footer>© 2026 Лиза Ветрова</footer>
+</div>
+<script>
+(function(){
+var hero=document.querySelector('.hero'),out=document.getElementById('coord');
+hero.addEventListener('pointermove',function(e){
+var r=hero.getBoundingClientRect(),x=(e.clientX-r.left)/r.width,y=(e.clientY-r.top)/r.height;
+var lat=(48.5-y*3).toFixed(2),lon=(27.2+x*3).toFixed(2);
+out.textContent='Широта '+lat+'° N · долгота '+lon+'° E';
+});
+})();
+</script>
+</body>
+</html>
